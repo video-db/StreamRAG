@@ -1,0 +1,139 @@
+openapi: 3.0.0
+info:
+  title: Video Search API
+  description: This API allows users to search collection of videos and get details of individual videos.
+  version: 1.9.0
+servers:
+  - url: https://treefrog-fresh-implicitly.ngrok-free.app
+    description: Main API server
+paths:
+  /videos:
+    get:
+      operationId: listVideos
+      summary: Get list of all videos in the library.
+      responses:
+        "200":
+          description: List details of all the videos
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListVideosResponse"
+        "400":
+          description: Invalid request
+        "default":
+          description: Unexpected error
+  /video/{id}:
+    get:
+      operationId: getVideo
+      summary: Get data ( transcript,length etc.) of a video given its id.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The unique identifier of the video.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Video Data of the requested video
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GetVideoResponse"
+        "400":
+          description: Invalid request due to incorrect or missing video id.
+        "default":
+          description: Unexpected error
+  /search:
+    post:
+      operationId: searchVideos
+      summary: Search for videos.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SearchRequest"
+      responses:
+        "200":
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SearchResponse"
+        "404":
+          description: No videos found
+        "400":
+          description: Invalid request
+        "default":
+          description: Unexpected error
+components:
+  schemas:
+    SearchRequest:
+      type: object
+      properties:
+        query:
+          type: string
+          description: Search query for finding videos
+    SearchResponse:
+      type: object
+      properties:
+        compilationVideo:
+          type: string
+          format: uri
+          description: Playable URL of the video
+        chunks:
+          type: array
+          items:
+            type: object
+            properties:
+              text:
+                type: string
+                description: Text content of the video
+              video:
+                type: string
+                format: uri
+                description: Playable URL of the video segment
+    GetVideoResponse:
+      type: object
+      properties:
+        video:
+          type: object
+          properties:
+            id:
+              type: string
+              description: Unique id of the video
+            title:
+              type: string
+              description: Title of the video
+            url:
+              description: Playable URL of the video
+              format: uri
+              type: string
+            length:
+              description: Length of the video in seconds
+              type: number
+            transcript:
+              description: Transcript of the video
+              type: string
+    ListVideosResponse:
+      type: object
+      properties:
+        videos:
+          type: array
+          items:
+            type: object
+            properties:
+              title:
+                type: string
+                description: Title of the video
+              id:
+                type: string
+                description: Unique id of the video
+              url:
+                description: Playable URL of the video
+                format: uri
+                type: string
+              length:
+                description: Length of the video in seconds
+                type: number
