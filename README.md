@@ -59,7 +59,7 @@ It enables developers to:
 - **Run locally:** Start the flask server with `python app.py`.
 
 ## Publishing on ChatGPT Store 🏪
-[📺 Watch: Create New GPT](https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/b4b01b80-f38b-47f7-a238-09e53d844792.m3u8')
+[📺 Watch: Create New GPT](https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/b4b01b80-f38b-47f7-a238-09e53d844792.m3u8)
 
 1. Deploy your flask server and note your server's `url`. For instance, you can use our public MoZ podcast server (
    replace with your Spext server details).
