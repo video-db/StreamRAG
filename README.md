@@ -16,7 +16,7 @@
     <img src="https://codaio.imgix.net/docs/_s5lUnUCIU/blobs/bl-RgjcFrrJjj/d3cbc44f8584ecd42f2a97d981a144dce6a66d83ddd5864f723b7808c7d1dfbc25034f2f25e1b2188e78f78f37bcb79d3c34ca937cbb08ca8b3da1526c29da9a897ab38eb39d084fd715028b7cc60eb595c68ecfa6fa0bb125ec2b09da65664a4f172c2f" alt="Logo" width="300" height="">
   </a>
 
-  <h3 align="center">StreamRAG 🎥</h3>
+<h3 align="center">StreamRAG 🎥</h3>
 
   <p align="center">
     Your Go-To Video Search Agent 🕵️‍♂️
@@ -33,11 +33,13 @@
 </p>
 
 <!-- ABOUT THE PROJECT -->
+
 # StreamRAG: GPT-Powered Video Retrieval & Streaming 🚀
 
 ## What does it do? 🤔
 
 It enables developers to:
+
 * 📚 Upload multiple videos to create a library or collection.
 * 🔍 Search across these videos and get real-time video responses or compilations.
 * 🛒 Publish your searchable collection on the ChatGPT store.
@@ -45,38 +47,49 @@ It enables developers to:
 * 🌟 Gain key insights from specific videos (like e31).
 
 ## How do I use it? 🛠️
-- **Get your API key:** Sign up on [VideoDB console](https://console.videodb.io) (Free for the first 50 uploads, no credit card required). 🆓
+
+- **Get your API key:** Sign up on [VideoDB console](https://console.videodb.io) (Free for the first 50 uploads, no
+  credit card required). 🆓
 - **Set `VIDEO_DB_API_KEY`:** Enter your key in the `env` file.
 - **Install dependencies:** Run `pip install -r requirements.txt` in your terminal.
 - **Upload your collection to VideoDB:** Add your links in `upload.py`.
 - **Run locally:** Start the flask server with `python app.py`.
 
 ## Publishing on ChatGPT Store 🏪
-1. Deploy your flask server and note your server's `url`. For instance, you can use our public MoZ podcast server (replace with your Spext server details).
+
+1. Deploy your flask server and note your server's `url`. For instance, you can use our public MoZ podcast server (
+   replace with your Spext server details).
 2. In `openapi.yaml`, update the `url` field under `server`.
 3. Visit the GPT builder at https://chat.openai.com/gpts/editor
 4. In the configure tab, add your GPT's `Name` and `Description`.
 5. Copy the prompt from `prompts.txt` into the `Instructions` field. Feel free to modify it as needed. ✏️
 6. Click on `Create new Action`
-7. Copy the openapi details from `openapi.yaml` Don't miss to update the `url` field. 
+7. Copy the openapi details from `openapi.yaml` Don't miss to update the `url` field.
 8. Save your GPT for personal use and give it a test run! 🧪
 
 ---
 <!-- ROADMAP -->
+
 ## Roadmap 🛣️
-1. Add support for popular backend deployment CD pipelines like `Heroku`, `Replit`, etc. 
-2. Integrate with other data sources like `Dropbox`, `Google Drive`. 
+
+1. Add support for popular backend deployment CD pipelines like `Heroku`, `Replit`, etc.
+2. Integrate with other data sources like `Dropbox`, `Google Drive`.
 3. Connect with meeting recorder APIs such as `Zoom`, `Teams`, and `Recall.ai`.
+
 ---
 <!-- CONTRIBUTING -->
+
 ## Contributing 🤝
-Your contributions make the open-source community an incredible place for learning, inspiration, and creativity. We welcome and appreciate your input! Here's how you can contribute:
+
+Your contributions make the open-source community an incredible place for learning, inspiration, and creativity. We
+welcome and appreciate your input! Here's how you can contribute:
 
 - Open issues to share your use cases.
 - Participate in brainstorming solutions for our roadmap.
 - Suggest improvements to the codebase.
 
 ### Contribution Steps
+
 1. Fork the Project 🍴
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
@@ -87,13 +100,22 @@ Your contributions make the open-source community an incredible place for learni
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [pypi-shield]: https://img.shields.io/pypi/v/videodb?style=for-the-badge
+
 [pypi-url]: https://pypi.org/project/videodb/
+
 [python-shield]:https://img.shields.io/pypi/pyversions/videodb?style=for-the-badge
+
 [stars-shield]: https://img.shields.io/github/stars/video-db/videodb-python.svg?style=for-the-badge
+
 [stars-url]: https://github.com/video-db/streamRAG/stargazers
+
 [issues-shield]: https://img.shields.io/github/issues/video-db/videodb-python.svg?style=for-the-badge
+
 [issues-url]: https://github.com/video-db/streamRAG/issues
+
 [website-shield]: https://img.shields.io/website?url=https%3A%2F%2Fvideodb.io%2F&style=for-the-badge&label=videodb.io
+
 [website-url]: https://videodb.io/
 

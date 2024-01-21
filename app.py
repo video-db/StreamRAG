@@ -1,9 +1,10 @@
-from flask import Flask, request
-from flask_cors import CORS
-from videodb import connect, SearchError
 import os
 
 from dotenv import load_dotenv
+from flask import Flask, request
+from flask_cors import CORS
+from videodb import connect, SearchError
+
 load_dotenv()
 
 # Flask config
