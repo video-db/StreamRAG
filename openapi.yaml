@@ -4,7 +4,7 @@ info:
   description: This API allows users to search collection of videos and get details of individual videos.
   version: 1.9.0
 servers:
-  - url: https://treefrog-fresh-implicitly.ngrok-free.app
+  - url: <paste your server url>
     description: Main API server
 paths:
   /videos:

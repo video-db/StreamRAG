@@ -44,7 +44,7 @@ It enables developers to:
 * 🔍 Search across these videos and get real-time video responses or compilations.
 * 🛒 Publish your searchable collection on the ChatGPT store.
 * 📝 Receive summarized text answers (RAG).
-* 🌟 Gain key insights from specific videos (like e31).
+* 🌟 Gain key insights from specific videos (e.g. "_Top points from  episode 31_").
 
 ## How do I use it? 🛠️
 
