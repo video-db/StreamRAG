@@ -37,6 +37,10 @@
 # StreamRAG: GPT-Powered Video Retrieval & Streaming 🚀
 
 ## What does it do? 🤔
+<video width="460" height="320" controls>
+  <source src="demos/demo_GPT.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 It enables developers to:
 
@@ -47,6 +51,10 @@ It enables developers to:
 * 🌟 Gain key insights from specific videos (e.g. "_Top points from  episode 31_").
 
 ## How do I use it? 🛠️
+<video width="460" height="320" controls>
+  <source src="demos/code_walkthrough.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 - **Get your API key:** Sign up on [VideoDB console](https://console.videodb.io) (Free for the first 50 uploads, no
   credit card required). 🆓
@@ -56,6 +64,10 @@ It enables developers to:
 - **Run locally:** Start the flask server with `python app.py`.
 
 ## Publishing on ChatGPT Store 🏪
+<video width="460" height="320" controls>
+  <source src="demos/create_new_GPT.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 1. Deploy your flask server and note your server's `url`. For instance, you can use our public MoZ podcast server (
    replace with your Spext server details).
@@ -118,4 +130,6 @@ welcome and appreciate your input! Here's how you can contribute:
 [website-shield]: https://img.shields.io/website?url=https%3A%2F%2Fvideodb.io%2F&style=for-the-badge&label=videodb.io
 
 [website-url]: https://videodb.io/
+
+[code-walkthrough]: https://github.com/video-db/StreamRAG/blob/main/demos/code_walkthrough.mp4
 
