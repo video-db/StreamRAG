@@ -37,6 +37,8 @@
 # StreamRAG: GPT-Powered Video Retrieval & Streaming 🚀
 
 ## What does it do? 🤔
+![Video description](demos/demo_GPT.mp4)
+
 <video width="460" height="320" controls>
   <source src="demos/demo_GPT.mp4" type="video/mp4">
   Your browser does not support the video tag.
