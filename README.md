@@ -19,7 +19,7 @@
 <h3 align="center">StreamRAG 🎥</h3>
 
   <p align="center">
-    Your Go-To Video Search Agent 🕵️‍♂️
+    Video Search Agent for ChatGPT 🕵️‍♂️
     <br />
     <a href="https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/90cb6cf2-d6ce-4a23-9d90-442c7cc357b8.m3u8"> 📺Watch Demo Video</a>  
     ·
@@ -61,8 +61,7 @@ It enables developers to:
 ## Publishing on ChatGPT Store 🏪
 [📺 Watch: Create New GPT](https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/b4b01b80-f38b-47f7-a238-09e53d844792.m3u8)
 
-1. Deploy your flask server and note your server's `url`. For instance, you can use our public MoZ podcast server (
-   replace with your Spext server details).
+1. Deploy your flask server and note your server's `url`. 
 2. In `openapi.yaml`, update the `url` field under `server`.
 3. Visit the GPT builder at https://chat.openai.com/gpts/editor
 4. In the configure tab, add your GPT's `Name` and `Description`.
