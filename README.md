@@ -33,6 +33,12 @@
 
 # StreamRAG: GPT-Powered Video Retrieval & Streaming 🚀
 
+
+https://github.com/video-db/StreamRAG/assets/5406975/b768bb6e-08b8-451e-9117-1cf04488c02c
+
+
+
+
 ## What does it do? 🤔
 
 It enables developers to:
