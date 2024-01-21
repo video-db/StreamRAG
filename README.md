@@ -21,15 +21,12 @@
   <p align="center">
     Your Go-To Video Search Agent 🕵️‍♂️
     <br />
-    <a href="https://docs.videodb.io"><strong>Discover More in the Docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/90cb6cf2-d6ce-4a23-9d90-442c7cc357b8.m3u8">Check Out the Demo Video</a> 🚀
+    <a href="https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/90cb6cf2-d6ce-4a23-9d90-442c7cc357b8.m3u8"> 📺Watch Demo Video</a>  
     ·
-    <a href="https://github.com/video-db/streamRAG/issues">Report a Bug</a> 🐞
+    <a href="https://github.com/video-db/streamRAG/issues">🐞Report a Bug</a> 
     ·
-    <a href="https://github.com/video-db/streamRAG/issues">Suggest a Feature</a> 💡
-  </p>
+    <a href="https://github.com/video-db/streamRAG/issues">💡Suggest a Feature</a> 
+  </p>📺
 </p>
 
 <!-- ABOUT THE PROJECT -->
