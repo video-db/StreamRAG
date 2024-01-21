@@ -24,7 +24,7 @@
     <a href="https://docs.videodb.io"><strong>Discover More in the Docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/video-db/videodb-cookbook">Check Out the Demo</a> 🚀
+    <a href="https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/90cb6cf2-d6ce-4a23-9d90-442c7cc357b8.m3u8">Check Out the Demo Video</a> 🚀
     ·
     <a href="https://github.com/video-db/streamRAG/issues">Report a Bug</a> 🐞
     ·
@@ -37,15 +37,8 @@
 # StreamRAG: GPT-Powered Video Retrieval & Streaming 🚀
 
 ## What does it do? 🤔
-![Video description](demos/demo_GPT.mp4)
-
-<video width="460" height="320" controls>
-  <source src="demos/demo_GPT.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 It enables developers to:
-
 * 📚 Upload multiple videos to create a library or collection.
 * 🔍 Search across these videos and get real-time video responses or compilations.
 * 🛒 Publish your searchable collection on the ChatGPT store.
@@ -53,10 +46,7 @@ It enables developers to:
 * 🌟 Gain key insights from specific videos (e.g. "_Top points from  episode 31_").
 
 ## How do I use it? 🛠️
-<video width="460" height="320" controls>
-  <source src="demos/code_walkthrough.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[📺 Watch: Code walkthrough](https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/b79a91d7-9553-4b4f-9d02-a47b9e168148.m3u8)
 
 - **Get your API key:** Sign up on [VideoDB console](https://console.videodb.io) (Free for the first 50 uploads, no
   credit card required). 🆓
@@ -66,10 +56,7 @@ It enables developers to:
 - **Run locally:** Start the flask server with `python app.py`.
 
 ## Publishing on ChatGPT Store 🏪
-<video width="460" height="320" controls>
-  <source src="demos/create_new_GPT.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[📺 Watch: Create New GPT](https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/b4b01b80-f38b-47f7-a238-09e53d844792.m3u8')
 
 1. Deploy your flask server and note your server's `url`. For instance, you can use our public MoZ podcast server (
    replace with your Spext server details).
@@ -121,7 +108,7 @@ welcome and appreciate your input! Here's how you can contribute:
 
 [python-shield]:https://img.shields.io/pypi/pyversions/videodb?style=for-the-badge
 
-[stars-shield]: https://img.shields.io/github/stars/video-db/videodb-python.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/video-db/streamRAG.svg?style=for-the-badge
 
 [stars-url]: https://github.com/video-db/streamRAG/stargazers
 
@@ -132,6 +119,4 @@ welcome and appreciate your input! Here's how you can contribute:
 [website-shield]: https://img.shields.io/website?url=https%3A%2F%2Fvideodb.io%2F&style=for-the-badge&label=videodb.io
 
 [website-url]: https://videodb.io/
-
-[code-walkthrough]: https://github.com/video-db/StreamRAG/blob/main/demos/code_walkthrough.mp4
 
