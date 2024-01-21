@@ -26,7 +26,7 @@
     <a href="https://github.com/video-db/streamRAG/issues">🐞Report a Bug</a> 
     ·
     <a href="https://github.com/video-db/streamRAG/issues">💡Suggest a Feature</a> 
-  </p>📺
+  </p>
 </p>
 
 <!-- ABOUT THE PROJECT -->
