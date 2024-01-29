@@ -125,4 +125,4 @@ welcome and appreciate your input! Here's how you can contribute:
 
 [discord-shield]: https://img.shields.io/discord/1189572299851051169?style=for-the-badge&logo=discord&label=Discord
 
-[discord-url]: https://discord.gg/2Y8b8ZJ
+[discord-url]: https://discord.gg/py9P639jGz
