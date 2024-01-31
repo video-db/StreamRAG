@@ -7,6 +7,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![Website][website-shield]][website-url]
+[![Discord][discord-shield]][discord-url]
 
 
 <!-- PROJECT LOGO -->
@@ -122,3 +123,6 @@ welcome and appreciate your input! Here's how you can contribute:
 
 [website-url]: https://videodb.io/
 
+[discord-shield]: https://img.shields.io/discord/1189572299851051169?style=for-the-badge&logo=discord&label=Discord
+
+[discord-url]: https://discord.gg/py9P639jGz
