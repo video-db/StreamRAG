@@ -59,6 +59,43 @@ It enables developers to:
 - **Upload your collection to VideoDB:** Add your links in `upload.py`.
 - **Run locally:** Start the flask server with `python app.py`.
 
+## Optional: use TwelveLabs instead of VideoDB 🧠
+
+StreamRAG can also be powered by [TwelveLabs](https://twelvelabs.io) as an
+**opt-in, drop-in backend** — no change to the GPT prompt or `openapi.yaml`:
+
+* 🔍 **Marengo** handles retrieval — multimodal (visual + audio) search over your index.
+* 📝 **Pegasus** handles answers — video understanding generates per-video summaries.
+
+To switch over, set these in your `env` file (leave `VIDEO_SEARCH_PROVIDER`
+unset to keep the default VideoDB behavior):
+
+```bash
+VIDEO_SEARCH_PROVIDER=twelvelabs
+TWELVELABS_API_KEY=tlk_...
+TWELVELABS_INDEX_ID=<your index id>
+```
+
+Create an index and upload videos once with the TwelveLabs SDK:
+
+```python
+from twelvelabs import TwelveLabs
+
+client = TwelveLabs(api_key="tlk_...")
+index = client.indexes.create(
+    index_name="streamrag",
+    models=[
+        {"model_name": "marengo3.0", "model_options": ["visual", "audio"]},
+        {"model_name": "pegasus1.2", "model_options": ["visual", "audio"]},
+    ],
+)
+task = client.tasks.create(index_id=index.id, video_url="https://...")
+client.tasks.wait_for_done(task_id=task.id)
+print("Set TWELVELABS_INDEX_ID =", index.id)
+```
+
+Grab a free API key at [twelvelabs.io](https://twelvelabs.io) — there's a generous free tier. 🆓
+
 ## Publishing on ChatGPT Store 🏪
 [📺 Watch: Create New GPT](https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/b4b01b80-f38b-47f7-a238-09e53d844792.m3u8)
 

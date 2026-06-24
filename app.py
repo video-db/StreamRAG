@@ -7,6 +7,14 @@ from videodb import connect, SearchError
 
 load_dotenv()
 
+# Opt-in alternative backend. When VIDEO_SEARCH_PROVIDER=twelvelabs, the
+# /videos, /video/<id> and /search routes are served by TwelveLabs (Marengo
+# retrieval + Pegasus answers). Unset/anything else keeps the default VideoDB
+# behavior untouched. See twelvelabs_provider.py.
+USE_TWELVELABS = os.getenv("VIDEO_SEARCH_PROVIDER", "").lower() == "twelvelabs"
+if USE_TWELVELABS:
+    import twelvelabs_provider
+
 # Flask config
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY")
@@ -29,6 +37,8 @@ def list_videos():
     """
     Get a list of all videos in the database of your default collection.
     """
+    if USE_TWELVELABS:
+        return twelvelabs_provider.list_videos()
     conn = get_connection()
     all_videos = conn.get_collection().get_videos()
     all_videos = [
@@ -49,6 +59,8 @@ def get_video(id):
     """
     Get a single video by id from default collection
     """
+    if USE_TWELVELABS:
+        return twelvelabs_provider.get_video(id)
     conn = get_connection()
     all_videos = conn.get_collection().get_videos()
 
@@ -77,6 +89,8 @@ def search_videos():
     """
     data = request.get_json()
     query = data.get("query")
+    if USE_TWELVELABS:
+        return twelvelabs_provider.search(query)
     conn = get_connection()
     try:
         coll = conn.get_collection()
