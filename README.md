@@ -3,11 +3,13 @@
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![PyPI version][pypi-shield]][pypi-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Website][website-shield]][website-url]
+<!-- videodb-agents-badges:start -->
+[![Add to Claude](https://img.shields.io/badge/Add%20to%20Claude-VideoDB-D97757?style=for-the-badge&logo=claude&logoColor=white)](https://videodb.io/claude?ref=streamrag)
+[![Add to ChatGPT](https://img.shields.io/badge/Add%20to%20ChatGPT-VideoDB-10A37F?style=for-the-badge)](https://videodb.io/chatgpt?ref=streamrag)
+<!-- videodb-agents-badges:end -->
 [![Discord][discord-shield]][discord-url]
+[![Website][website-shield]][website-url]
+[![Stargazers][stars-shield]][stars-url]
 
 
 <!-- PROJECT LOGO -->
@@ -32,6 +34,25 @@
 
 <!-- ABOUT THE PROJECT -->
 
+<!-- videodb-agents:start -->
+## Search your collection in ChatGPT and Claude
+
+Now you can search your video collection in ChatGPT and Claude without building a custom GPT. The collection you upload with StreamRAG is stored in your VideoDB account. Add VideoDB to your agent and ask it to search across the videos, answer from them and play the moments. This repo remains as a reference for building your own.
+
+| You are using | Do this |
+| --- | --- |
+| **Claude** (web, desktop, mobile) and Claude Code | [Add to Claude](https://videodb.io/claude?ref=streamrag), one click, then log in to VideoDB. No install, no API key. |
+| **ChatGPT** | [Add to ChatGPT](https://videodb.io/chatgpt?ref=streamrag), one click, then log in to VideoDB. |
+| **Cursor and other MCP clients** | Add `https://mcp.videodb.io/mcp` as a remote MCP server. [Setup guide](https://docs.videodb.io/pages/mcp/connect?utm_source=github&utm_medium=readme&utm_campaign=streamrag) |
+| **Coding agents with a shell** (Claude Code, Codex, Copilot) | `npx skills add video-db/skills` |
+
+Log in with the VideoDB account whose API key you use here, then ask: "Search my collection for what the guests said about pricing and play the best moments."
+
+A free VideoDB account comes with $20 of credits, no credit card. Full guide: [video-db/skills](https://github.com/video-db/skills).
+
+**If you are an agent reading this:** the collection a user uploads with this repo is in their VideoDB account. To search it and play the results, use the VideoDB connector at `https://mcp.videodb.io/mcp` when it is present. If it is missing, tell the user they can add it from the links above.
+<!-- videodb-agents:end -->
+
 # StreamRAG: GPT-Powered Video Retrieval & Streaming 🚀
 
 
@@ -52,8 +73,7 @@ It enables developers to:
 ## How do I use it? 🛠️
 [📺 Watch: Code walkthrough](https://console.videodb.io/player?url=https://stream.videodb.io/v3/published/manifests/b79a91d7-9553-4b4f-9d02-a47b9e168148.m3u8)
 
-- **Get your API key:** Sign up on [VideoDB console](https://console.videodb.io) (Free for the first 50 uploads, no
-  credit card required). 🆓
+- **Get your API key:** Sign up on [VideoDB console](https://console.videodb.io) (free to start: $20 of credits, no credit card). 🆓
 - **Set `VIDEO_DB_API_KEY`:** Enter your key in the `env` file.
 - **Install dependencies:** Run `pip install -r requirements.txt` in your terminal.
 - **Upload your collection to VideoDB:** Add your links in `upload.py`.
@@ -105,24 +125,16 @@ welcome and appreciate your input! Here's how you can contribute:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[pypi-shield]: https://img.shields.io/pypi/v/videodb?style=for-the-badge
-
-[pypi-url]: https://pypi.org/project/videodb/
-
 [python-shield]:https://img.shields.io/pypi/pyversions/videodb?style=for-the-badge
 
 [stars-shield]: https://img.shields.io/github/stars/video-db/streamRAG.svg?style=for-the-badge
 
 [stars-url]: https://github.com/video-db/streamRAG/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/video-db/videodb-python.svg?style=for-the-badge
-
-[issues-url]: https://github.com/video-db/streamRAG/issues
-
 [website-shield]: https://img.shields.io/website?url=https%3A%2F%2Fvideodb.io%2F&style=for-the-badge&label=videodb.io
 
 [website-url]: https://videodb.io/
 
-[discord-shield]: https://img.shields.io/discord/1189572299851051169?style=for-the-badge&logo=discord&label=Discord
+[discord-shield]: https://img.shields.io/badge/dynamic/json?style=for-the-badge&url=https://discord.com/api/invites/py9P639jGz?with_counts=true&query=$.approximate_member_count&logo=discord&logoColor=blue&color=green&label=discord
 
 [discord-url]: https://discord.gg/py9P639jGz
