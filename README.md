@@ -7,11 +7,9 @@
 [![Add to Claude](https://img.shields.io/badge/Add%20to%20Claude-VideoDB-D97757?style=for-the-badge&logo=claude&logoColor=white)](https://videodb.io/claude?ref=streamrag)
 [![Add to ChatGPT](https://img.shields.io/badge/Add%20to%20ChatGPT-VideoDB-10A37F?style=for-the-badge)](https://videodb.io/chatgpt?ref=streamrag)
 <!-- videodb-agents-badges:end -->
-[![PyPI version][pypi-shield]][pypi-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Website][website-shield]][website-url]
 [![Discord][discord-shield]][discord-url]
+[![Website][website-shield]][website-url]
+[![Stargazers][stars-shield]][stars-url]
 
 
 <!-- PROJECT LOGO -->
@@ -127,19 +125,11 @@ welcome and appreciate your input! Here's how you can contribute:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[pypi-shield]: https://img.shields.io/pypi/v/videodb?style=for-the-badge
-
-[pypi-url]: https://pypi.org/project/videodb/
-
 [python-shield]:https://img.shields.io/pypi/pyversions/videodb?style=for-the-badge
 
 [stars-shield]: https://img.shields.io/github/stars/video-db/streamRAG.svg?style=for-the-badge
 
 [stars-url]: https://github.com/video-db/streamRAG/stargazers
-
-[issues-shield]: https://img.shields.io/github/issues/video-db/videodb-python.svg?style=for-the-badge
-
-[issues-url]: https://github.com/video-db/streamRAG/issues
 
 [website-shield]: https://img.shields.io/website?url=https%3A%2F%2Fvideodb.io%2F&style=for-the-badge&label=videodb.io
 
