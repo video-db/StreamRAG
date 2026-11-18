@@ -135,6 +135,6 @@ welcome and appreciate your input! Here's how you can contribute:
 
 [website-url]: https://videodb.io/
 
-[discord-shield]: https://img.shields.io/discord/1189572299851051169?style=for-the-badge&logo=discord&label=Discord
+[discord-shield]: https://img.shields.io/badge/dynamic/json?style=for-the-badge&url=https://discord.com/api/invites/py9P639jGz?with_counts=true&query=$.approximate_member_count&logo=discord&logoColor=blue&color=green&label=discord
 
 [discord-url]: https://discord.gg/py9P639jGz
